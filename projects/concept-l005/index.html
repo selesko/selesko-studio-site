@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concept L.005 — Selesko Studio</title>
+  <meta name="description" content="The warmth of natural timber paired with the directional clarity of integrated LED.">
+  <link rel="icon" href="https://assets.super.so/e67d8a78-4937-4019-80c3-1aff479d09f8/uploads/favicon/32e46fc8-2a49-4ad7-9caa-c3b26b6ea091.png">
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #fff; color: #1a1a1a; font-size: 14px; line-height: 1.6; }
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 14px 40px; border-bottom: 1px solid #ebebeb; }
+  .nav-logo { display: flex; align-items: center; gap: 10px; }
+  .nav-logo img { width: 30px; height: 30px; object-fit: contain; }
+  .nav-logo-text { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; line-height: 1.25; text-transform: uppercase; }
+  .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+  .nav-links a { font-size: 12.5px; letter-spacing: 0.01em; color: #1a1a1a; transition: color .2s; }
+  .nav-links a:hover { color: #888; }
+  .nav-search { cursor: pointer; opacity: .6; }
+  .nav-search:hover { opacity: 1; }
+
+  /* HERO */
+  .home-hero { display: flex; justify-content: center; align-items: center; padding: 64px 40px 48px; }
+  .home-hero img { max-width: 340px; width: 60%; }
+
+  /* GALLERY SECTION */
+  .gallery-section { padding: 0 40px 72px; }
+  .section-label { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #1a1a1a; padding-bottom: 20px; }
+  .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .gallery-card { display: block; overflow: hidden; background: #f2f2f2; aspect-ratio: 4/3; position: relative; }
+  .gallery-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+  .gallery-card:hover img { transform: scale(1.04); }
+
+  /* PAGE HEADER */
+  .page-header { padding: 64px 40px 40px; max-width: 900px; }
+  .page-header h1 { font-size: 28px; font-weight: 400; letter-spacing: -0.01em; margin-bottom: 24px; }
+
+  /* CONTENT */
+  .content { max-width: 900px; padding: 0 40px 80px; }
+  .content h2 { font-size: 16px; font-weight: 500; margin: 32px 0 12px; }
+  .content h3 { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; margin: 24px 0 8px; color: #555; }
+  .content p { margin-bottom: 16px; line-height: 1.75; color: #333; font-size: 14px; }
+  .content ul { margin: 12px 0 16px 20px; }
+  .content li { margin-bottom: 6px; line-height: 1.65; color: #333; }
+  .content strong { font-weight: 600; color: #1a1a1a; }
+  .content img { width: 100%; max-width: 100%; margin: 24px 0; display: block; }
+  .content .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 24px 0; }
+  @media (max-width: 640px) { .content .cols { grid-template-columns: 1fr; } }
+
+  /* META (project metadata) */
+  .meta { display: flex; flex-direction: column; gap: 4px; margin-bottom: 32px; }
+  .meta-row { font-size: 13px; }
+  .meta-row strong { font-weight: 500; }
+
+  /* ABOUT */
+  .about-cols { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; padding: 0 40px 80px; max-width: 900px; }
+  @media (max-width: 640px) { .about-cols { grid-template-columns: 1fr; } }
+  .about-creds { display: flex; flex-direction: column; gap: 6px; }
+  .about-cred { font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: #555; text-transform: uppercase; }
+  .about-bio p { font-size: 14px; line-height: 1.8; color: #333; margin-bottom: 16px; }
+
+  /* SERVICES */
+  .services-ethos { padding: 0 40px 40px; max-width: 900px; }
+  .services-ethos .tagline { font-size: 20px; font-weight: 400; line-height: 1.5; margin-bottom: 16px; }
+  .services-ethos p { font-size: 14px; line-height: 1.8; color: #333; }
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; padding: 40px 40px 80px; max-width: 1100px; }
+  @media (max-width: 700px) { .services-grid { grid-template-columns: 1fr; } }
+  .service-card h3 { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; }
+  .service-card .tagline-sm { font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+  .service-card p, .service-card li { font-size: 13px; line-height: 1.7; color: #444; }
+  .service-card ul { margin: 8px 0 0 16px; }
+
+  /* CONTACT */
+  .contact-wrap { padding: 0 40px 80px; max-width: 600px; }
+  .contact-intro { font-size: 14px; line-height: 1.8; color: #333; margin-bottom: 32px; }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .contact-form input, .contact-form textarea { width: 100%; padding: 12px 14px; border: 1px solid #ddd; font-family: inherit; font-size: 14px; color: #1a1a1a; background: #fff; outline: none; transition: border-color .2s; }
+  .contact-form input:focus, .contact-form textarea:focus { border-color: #1a1a1a; }
+  .contact-form textarea { min-height: 140px; resize: vertical; }
+  .contact-form button { align-self: flex-start; padding: 12px 32px; background: #1a1a1a; color: #fff; border: none; font-family: inherit; font-size: 13px; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: background .2s; }
+  .contact-form button:hover { background: #333; }
+
+  /* FIELD NOTE */
+  .fn-label { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 8px; }
+  .fn-cover { width: 100%; aspect-ratio: 16/9; object-fit: cover; margin-bottom: 40px; display: block; }
+  .fn-content p { font-size: 14.5px; line-height: 1.85; color: #2a2a2a; margin-bottom: 20px; }
+  .fn-content h2 { font-size: 17px; font-weight: 500; margin: 36px 0 14px; }
+  .fn-content strong { font-weight: 600; color: #1a1a1a; }
+  .fn-content ul { margin: 12px 0 20px 20px; }
+  .fn-content li { font-size: 14px; line-height: 1.75; color: #333; margin-bottom: 6px; }
+  .fn-content em { color: #555; }
+  hr { border: none; border-top: 1px solid #ebebeb; margin: 32px 0; }
+
+  /* PROCESS */
+  .process-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; padding: 0 40px 80px; max-width: 1100px; }
+  @media (max-width: 700px) { .process-cols { grid-template-columns: 1fr; } }
+  .process-col h2 { font-size: 16px; font-weight: 500; margin-bottom: 24px; }
+  .process-step { margin-bottom: 28px; }
+  .process-step h3 { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+  .process-step .step-tagline { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
+  .process-step p, .process-step li { font-size: 13px; line-height: 1.7; color: #444; }
+  .process-step ul { margin: 6px 0 0 16px; }
+
+  /* FIELD NOTES GRID */
+  .fn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 40px 80px; max-width: 1000px; }
+  .fn-card { display: block; }
+  .fn-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; margin-bottom: 12px; }
+  .fn-card-title { font-size: 14px; font-weight: 500; line-height: 1.4; }
+  .fn-card:hover .fn-card-title { text-decoration: underline; }
+  @media (max-width: 600px) { .gallery-grid, .fn-grid { grid-template-columns: 1fr; } nav { padding: 14px 20px; } }
+
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">
+    <img src="https://assets.super.so/e67d8a78-4937-4019-80c3-1aff479d09f8/uploads/logo/c0a47f74-34ce-46df-9aa8-33571a025c69.jpeg" alt="Selesko Studio">
+    <span class="nav-logo-text">Selesko<br>Studio</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/architecture/">Architecture</a></li>
+    <li><a href="/design/" style="font-weight:600">Design</a></li>
+    <li><a href="/process/">Process</a></li>
+    <li><a href="/field-notes/">Field Notes</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+</nav>
+
+<div style="max-width:1100px;padding:40px 40px 0;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+  <div><img src="https://assets.super.so/e67d8a78-4937-4019-80c3-1aff479d09f8/images/63b94515-1648-4d08-82f2-7fd7e4e84d83/l.005.png" alt="Concept L.005" style="width:100%;display:block;background:#f2f2f2;"></div>
+  <div>
+    <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#888;margin-bottom:10px;">Design</div>
+    <h1 style="font-size:26px;font-weight:400;letter-spacing:-0.01em;margin-bottom:16px;">Concept L.005</h1>
+    <p style="font-size:14px;line-height:1.8;color:#333;margin-bottom:28px;">The warmth of natural timber paired with the directional clarity of integrated LED.</p>
+    <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#555;margin-bottom:6px;">Typology</div>
+    <p style="font-size:13px;color:#333;margin-bottom:20px;">Lamp Design &nbsp;·&nbsp; White Oak &amp; Steel &nbsp;·&nbsp; Integrated LED</p>
+    <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#555;margin-bottom:6px;">Standard</div>
+    <p style="font-size:13px;color:#333;margin-bottom:32px;">Red List Free materials &nbsp;·&nbsp; Local fabrication where possible</p>
+    <a href="/contact/" style="display:inline-block;padding:12px 28px;background:#1a1a1a;color:#fff;font-size:12px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;">Inquire About This Piece</a>
+  </div>
+</div>
+<div style="padding:48px 40px 80px;">
+  <a href="/design/" style="font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#888;">&larr; All Design</a>
+</div>
+</body>
+</html>
