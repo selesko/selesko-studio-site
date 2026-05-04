@@ -78,4 +78,4 @@ AI pushes to GitHub → Vercel auto-deploys (~30 seconds)
 
 ## AI Collaboration Protocol
 
-See [`PROTOCOL.md`](./PROTOCOL.md) for the full multi-AI workflow and git rules.
+See [`AGENT_INSTRUCTIONS.md`](./AGENT_INSTRUCTIONS.md) for the full multi-AI workflow, Notion integration IDs, and git deployment rules.
