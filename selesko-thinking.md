@@ -4,6 +4,38 @@
 
 ---
 
+## Tech Stack & Important Info
+
+### Domain
+- **selesko.co** — registered at Name.com (managed under Super.so's account)
+- **EPP / Transfer Authorization Key:** `J!tI5#kI4%zJ6!qQ` ← needed when Super.so subscription lapses to transfer domain to Cloudflare Registrar
+- **DNS:** Managed via Super.so DNS panel (nameservers: ns1.vercel-dns.com / ns2.vercel-dns.com)
+- **Cloudflare:** selesko.co added as a zone (Zone ID: bbd5cbde0a8f10c934e2830bf793f0d9, Account ID: 18872de795f6188cee1146ef26642795) but currently dormant — nameservers haven't switched yet. Activate when domain transfers.
+- **To-do when Super.so lapses:** Transfer domain to Cloudflare using EPP key → update DNS records there (A @ → 216.198.79.1, CNAME www → 078d5fcf796c75a3.vercel-dns-017com., TXT _vercel verification records)
+
+### Hosting
+- **Platform:** Vercel
+- **Project:** selesko-studio-site
+- **Project ID:** prj_Co4J2E4XiDYXatQFe0byl9w8OAzh
+- **Team ID:** team_IrKOdkXJk39vYVaoXqJDq478
+- **Repo:** GitHub → auto-deploys on push to main
+- **Live URL:** selesko.co (apex domain verified ✓, www pending)
+
+### Codebase
+- **Location:** `/Users/jeffgoldblatt/Dev/Selesko-Studio/`
+- **Stack:** Static HTML/CSS — no framework, no build step
+- **Deploy:** Push to GitHub → Vercel picks it up automatically
+
+### Notion
+- **Projects DB:** `collection://2b67898a-3748-80c0-91a3-000bf3cb58d0`
+- **Used for:** Project briefs, concept directions, massing notes, approved narratives, image prompts
+
+### Agentic Tools
+- **Concept Sprint skill:** `concept-sprint.skill` — installable Cowork skill for end-to-end concept development pipeline
+- **Image Reference Library:** https://selesko-reference-library.vercel.app/ — visual references organized by material, typology, mood
+
+---
+
 ## The Name
 
 "Selesko" is not just my middle name; it is my grandmother's maiden name. To carry the name Selesko is an act of bringing the past forward. It is a reminder that we do not build in a vacuum; we build in a continuum. Just as a home inherits the landscape it sits on, our work inherits the stories that came before. It is a commitment to craft architecture that honors where we come from while sheltering where we are going.
@@ -97,4 +129,4 @@ One command from concept brief to live page. The website becomes a continuously 
 
 ---
 
-*Last updated: April 30, 2026*
+*Last updated: May 9, 2026*
