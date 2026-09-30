@@ -1,0 +1,6 @@
+/* Shared accessibility and layout repairs. */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #245d4c; outline-offset: 4px; }
+.gallery-caption { position:absolute; inset:auto 0 0; padding:28px 18px 14px; background:linear-gradient(transparent,rgba(0,0,0,.78)); color:#fff; font-size:14px; line-height:1.4; }
+.contact-form label { font-weight:500; margin-bottom:-10px; }
+@media(max-width:760px) { nav { flex-wrap:wrap; gap:12px; padding:12px 20px; } .nav-links { flex-wrap:wrap; gap:12px 18px; width:100%; } .nav-links a { display:inline-block; padding:5px 0; } .home-hero { padding:40px 20px; } .gallery-section { padding:0 20px 40px; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; } }
