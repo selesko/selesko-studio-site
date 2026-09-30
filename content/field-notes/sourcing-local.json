@@ -1,0 +1,60 @@
+{
+  "slug": "sourcing-local",
+  "title": "Sourcing Local",
+  "description": "The Radius of Impact: Why build with Oregon White Oak",
+  "status": "published",
+  "source": "Notion: Sourcing Local",
+  "sourceReviewed": "2026-09-30",
+  "cover": "/images/site/sourcing.webp",
+  "coverAlt": "Oregon White Oak material study",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Connecting the Red List to the Willamette Valley"
+    },
+    {
+      "type": "paragraph",
+      "text": "We live in an era of “anonymous materials.”You can order a dining table that looks like wood, feels somewhat like wood, but is actually a slurry of sawdust and resin pressed together in a factory three continents away. As a Living Future Accredited (LFA) professional, I know that this anonymity is a risk. If we don't know where a material comes from, we can't verify what is in it."
+    },
+    {
+      "type": "heading",
+      "text": "The Material: Oregon White Oak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Our material palette is intentionally restrained, and at the center of it is Quercus garryana - native Oregon White Oak. Unlike the commercial Red Oak shipped from the East Coast, our local White Oak is denser, more durable, and carries a unique, complex grain character that tells the story of our specific climate."
+    },
+    {
+      "type": "heading",
+      "text": "The LFA Standard: Red List Free"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sourcing local isn't just a sentimental choice; it is a chemical one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because I hold my work to the rigorous standards of the Living Building Challenge, we are committed to eliminating the \"Red List.\" These are the industry's worst-in-class chemicals - ubiquitous toxins like PVC, formaldehyde, and halogenated flame retardants - that pollute our environment and endanger the people who build with them."
+    },
+    {
+      "type": "paragraph",
+      "text": "By working directly with local mills in the Willamette Valley, we eliminate the need for global shipping (drastically cutting embodied carbon). But more importantly, we control the processing. We know the wood hasn't been treated with harsh pesticides during transport. We know the kiln-drying process is clean. We can finish it with natural oils rather than toxic polyurethanes."
+    },
+    {
+      "type": "heading",
+      "text": "From Structure to Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "This philosophy governs everything we touch, regardless of scale. Whether we are specifying the cladding for a custom home or selecting a single board for a table lamp, the standard remains absolute. We apply the same architectural rigor to our objects as we do to our buildings - demanding that even the smallest fixture in the room is honest, healthy, and built to last."
+    },
+    {
+      "type": "heading",
+      "text": "The Takeaway"
+    },
+    {
+      "type": "paragraph",
+      "text": "Luxury isn't about exotic materials imported from halfway across the world. Luxury is knowing the name of the forest your home was built from."
+    }
+  ]
+}

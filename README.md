@@ -8,7 +8,7 @@
 
 ## What This Is
 
-A hand-built static HTML site that replaces the Super App / selesko.co subscription. No framework, no build step — pure HTML/CSS served by Vercel. Every page is a single `.html` file.
+A hand-built static HTML site that replaces the Super App / selesko.co subscription. No framework — static HTML/CSS with an allowlisted publishing build served by Vercel. Every page is a single `.html` file.
 
 Content lives in Notion. When Jeff wants to update the site, he tells an AI assistant, which re-fetches from Notion and redeploys.
 
@@ -58,13 +58,11 @@ AI pushes to GitHub → Vercel auto-deploys (~30 seconds)
 
 ## Image Strategy
 
-- **Gallery & hero images:** Served from Super App CDN (`assets.super.so`) — permanent URLs.
-- **Inline/detail images:** Re-fetched from Notion S3 at each rebuild. Notion S3 URLs expire in ~1 hour, so the site must be pushed shortly after a rebuild.
-- **Field note covers:** Served from `images.spr.so` CDN — permanent URLs.
+Approved images are optimized into `images/site/` and served with the website. Originals stay in Notion/Drive. Temporary Notion URLs are download inputs only; they must never appear in published HTML.
 
-> **Rule:** Always push to GitHub within 30 minutes of rebuilding pages that contain Notion S3 image URLs.
+## Build and publishing
 
----
+Run `node scripts/build.mjs`. Only the explicit public pages, images, and styles are copied into `public/`. Internal documents and studio-dashboard are excluded. See `PUBLISHING.md` for the editorial workflow.
 
 ## Tech Notes
 
