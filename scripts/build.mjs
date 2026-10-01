@@ -4,9 +4,11 @@ import assert from 'node:assert/strict';
 
 const root = path.resolve(import.meta.dirname, '..');
 const out = path.join(root, 'public');
+assert(path.dirname(out) === root && path.basename(out) === 'public', 'Unsafe output directory');
+assert(!fs.existsSync(out) || !fs.lstatSync(out).isSymbolicLink(), 'Output must not be a symlink');
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(out);
-const sections = ['architecture', 'design', 'about', 'services', 'process', 'contact', 'projects', 'field-notes'];
+const sections = ['architecture', 'sketchbook', 'built-work', 'design', 'about', 'services', 'process', 'contact', 'projects', 'field-notes'];
 fs.copyFileSync(path.join(root, 'index.html'), path.join(out, 'index.html'));
 for (const section of sections) fs.cpSync(path.join(root, section), path.join(out, section), { recursive: true });
 for (const section of ['images', 'assets']) fs.cpSync(path.join(root, section), path.join(out, section), { recursive: true });

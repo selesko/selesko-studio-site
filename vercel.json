@@ -1,5 +1,12 @@
 {
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "public",
-  "framework": null
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/architecture/:path*",
+      "destination": "/sketchbook/",
+      "permanent": true
+    }
+  ]
 }
