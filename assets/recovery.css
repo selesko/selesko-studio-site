@@ -4,3 +4,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .contact-form label { font-weight:500; margin-bottom:-10px; }
 @media(max-width:760px) { nav { flex-wrap:wrap; gap:12px; padding:12px 20px; } .nav-links { flex-wrap:wrap; gap:12px 18px; width:100%; } .nav-links a { display:inline-block; padding:5px 0; } .home-hero { padding:40px 20px; } .gallery-section { padding:0 20px 40px; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; } }
+
+/* Sketchbook and Built Work. */
+.nav-links a[aria-current="page"] { font-weight:600; }
+.section-intro { max-width:620px; color:#555; font-size:14px; line-height:1.75; }
+.gallery-section > .section-intro { margin:-8px 0 24px; }
+.section-label a:hover { text-decoration:underline; text-underline-offset:4px; }
+.text-link { display:inline-block; border-bottom:1px solid #aaa; padding-bottom:3px; font-size:13px; }
+.text-link:hover { border-color:#1a1a1a; }
+.portfolio-teaser { padding:28px 0; border-top:1px solid #ebebeb; border-bottom:1px solid #ebebeb; }
+.portfolio-teaser p { margin-bottom:18px; color:#555; }
+.portfolio-pending { min-height:38vh; }
+.portfolio-pending h2 { margin-top:0; }
+#sketchbook, #built-work, #architecture { scroll-margin-top:140px; }
+@media(max-width:980px) { nav { flex-wrap:wrap; gap:12px; padding:12px 20px; } .nav-links { flex-wrap:wrap; gap:12px 18px; width:100%; } .nav-links a { display:inline-block; padding:5px 0; } }
+@media(max-width:760px) { .page-header { padding:40px 20px 28px; } .portfolio-pending { padding:0 20px 60px; } }
