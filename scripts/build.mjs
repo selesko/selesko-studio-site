@@ -35,6 +35,7 @@ for (const file of fs.readdirSync(path.join(root, 'content/field-notes'))) {
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(note.title)} — Selesko Studio</title><meta name="description" content="${esc(note.description)}">
 <meta property="og:title" content="${esc(note.title)}"><meta property="og:description" content="${esc(note.description)}">
+<link rel="icon" type="image/svg+xml" href="/assets/selesko-icon.svg">
 ${style}<link rel="stylesheet" href="/assets/recovery.css"></head><body>${nav}
 <main class="content" style="padding-top:48px"><span class="fn-label">Field Notes</span><h1>${esc(note.title)}</h1>
 <img class="fn-cover" src="${esc(note.cover)}" alt="${esc(note.coverAlt)}"><article class="fn-content">${body}</article>
