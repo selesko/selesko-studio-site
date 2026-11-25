@@ -25,8 +25,10 @@ for (const file of fs.readdirSync(path.join(root, 'content/field-notes'))) {
   assert(note.source?.startsWith('Notion: '), 'Missing editorial source label');
   assert(note.title && Array.isArray(note.blocks) && note.blocks.length, 'Incomplete note');
   assert(/^\/images\/[a-zA-Z0-9/._-]+$/.test(note.cover) && !note.cover.includes('..'), 'Use a local cover');
-  const body = note.blocks.map(b => {
+  const cover = `<img class="fn-cover" src="${esc(note.cover)}" alt="${esc(note.coverAlt)}">`;
+  const body = note.blocks.map((b, index) => {
     assert(['paragraph','heading'].includes(b.type), 'Unsupported block type');
+    if (note.coverAfterOpening && index === 0) return `<p>${esc(b.text)}</p><img src="${esc(note.cover)}" alt="${esc(note.coverAlt)}" style="display:block;width:100%;height:auto">`;
     return b.type === 'heading' ? `<h2>${esc(b.text)}</h2>` : `<p>${esc(b.text)}</p>`;
   }).join('\n');
   const dir = path.join(out, 'field-notes', note.slug);
@@ -38,7 +40,7 @@ for (const file of fs.readdirSync(path.join(root, 'content/field-notes'))) {
 <link rel="icon" type="image/svg+xml" href="/assets/selesko-icon.svg?v=2">
 ${style}<link rel="stylesheet" href="/assets/recovery.css"></head><body>${nav}
 <main class="content" style="padding-top:48px"><span class="fn-label">Field Notes</span><h1>${esc(note.title)}</h1>
-<img class="fn-cover" src="${esc(note.cover)}" alt="${esc(note.coverAlt)}"><article class="fn-content">${body}</article>
+${note.coverAfterOpening ? '' : cover}<article class="fn-content">${body}</article>
 <hr><a href="/field-notes/">← All Field Notes</a></main></body></html>`);
   // Keep both discovery surfaces synchronized when a new approved note is added.
   const href = `/field-notes/${note.slug}/`;
