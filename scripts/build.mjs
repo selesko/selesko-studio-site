@@ -42,12 +42,12 @@ ${style}<link rel="stylesheet" href="/assets/recovery.css"></head><body>${nav}
 <hr><a href="/field-notes/">← All Field Notes</a></main></body></html>`);
   // Keep both discovery surfaces synchronized when a new approved note is added.
   const href = `/field-notes/${note.slug}/`;
-  for (const [target, marker, cardClass] of [['index.html','id="journal"','gallery-card'], ['field-notes/index.html','class="fn-grid"','fn-card']]) {
+  for (const [target, marker, cardClass] of [['index.html','<!-- new published notes -->','wall-piece'], ['field-notes/index.html','class="fn-grid"','fn-card']]) {
     const dest = path.join(out, target); let text = fs.readFileSync(dest, 'utf8');
     if (text.includes(`href="${href}"`)) continue;
     const start = text.indexOf(marker); assert(start >= 0, `Missing listing marker: ${target}`);
-    const insert = target === 'index.html' ? text.indexOf('>', text.indexOf('class="gallery-grid"', start)) + 1 : text.indexOf('>', start) + 1;
-    const card = `<a class="${cardClass}" href="${href}"><img src="${esc(note.cover)}" alt="${esc(note.coverAlt)}" loading="lazy"><span class="${cardClass === 'gallery-card' ? 'gallery-caption' : 'fn-card-title'}">${esc(note.title)}</span></a>`;
+    const insert = target === 'index.html' ? start : text.indexOf('>', start) + 1;
+    const card = `<a class="${cardClass}" href="${href}"><img src="${esc(note.cover)}" alt="${esc(note.coverAlt)}" loading="lazy"><span class="${cardClass === 'wall-piece' ? 'piece-title' : 'fn-card-title'}">${esc(note.title)}</span></a>`;
     text = text.slice(0, insert) + card + text.slice(insert); fs.writeFileSync(dest, text);
   }
 }
