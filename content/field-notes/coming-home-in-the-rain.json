@@ -1,0 +1,50 @@
+{
+  "slug": "coming-home-in-the-rain",
+  "title": "Coming Home in the Rain",
+  "description": "Three ways to shelter the walk to the front door and the moment you stop to open it.",
+  "status": "published",
+  "source": "Notion: Coming Home in the Rain",
+  "sourceReviewed": "2026-11-25",
+  "cover": "/images/site/coming-home-in-the-rain.webp",
+  "coverAlt": "Pen sketch of a person carrying groceries under a covered porch with a bench and rain chain.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "You get to the front door with a bag of groceries in one arm. The key is in the pocket on that side. There’s a roof over the door, but as soon as you step back to free your hand, water starts dripping down your collar. The roof covers the door. The person opening it needs a little more room."
+    },
+    {
+      "type": "heading",
+      "text": "1. Project a canopy"
+    },
+    {
+      "type": "paragraph",
+      "text": "A canopy carries the roof out over the landing, giving you a dry place to pause at the door. Start with where you’ll stand to unlock it, including how far you step back if the door swings toward you. Then look up. If the canopy ends right over that spot, so does the drip line. A gutter can carry the water to one side of the approach. A canopy still leaves the landing exposed to rain that blows in from the side."
+    },
+    {
+      "type": "heading",
+      "text": "2. Recess the door"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the door back into the face of the house and the walls on either side can help block wind-driven rain. This works particularly well at a new entry where there’s room in the plan to give up a little interior floor area. Look at the recess from the sidewalk as well as in section. A deep, narrow opening may feel protected once you’re inside it, but leave little room for someone to wait beside you or for light to reach the door."
+    },
+    {
+      "type": "heading",
+      "text": "3. Make room for a porch"
+    },
+    {
+      "type": "paragraph",
+      "text": "A porch can shelter the last few steps of the approach as well as the landing. It can also give you a place to set a bag, shake out an umbrella, or wait with someone while the other person finds the key. The bench belongs beside the path to the door, with enough cover that you can use it in a storm. If the roof drains to a rain chain, tuck it off to the side so the water lands beyond the route you walk."
+    },
+    {
+      "type": "paragraph",
+      "text": "A rainy day makes a good site visit. Walk in from the sidewalk and pay attention to three places: where you first get under cover, where you stand to open the door, and where you put down what you’re carrying. Each one needs a dry spot of its own."
+    },
+    {
+      "type": "image",
+      "src": "/images/site/canopy-and-recess.webp",
+      "alt": "Two pen sketches showing a person sheltered by a projecting canopy on the left and a recessed entry on the right.",
+      "caption": "A projecting canopy (left) and a recessed entry (right)."
+    }
+  ]
+}

@@ -27,6 +27,11 @@ for (const file of fs.readdirSync(path.join(root, 'content/field-notes'))) {
   assert(/^\/images\/[a-zA-Z0-9/._-]+$/.test(note.cover) && !note.cover.includes('..'), 'Use a local cover');
   const cover = `<img class="fn-cover" src="${esc(note.cover)}" alt="${esc(note.coverAlt)}">`;
   const body = note.blocks.map((b, index) => {
+    if (b.type === 'image') {
+      assert(/^\/images\/[a-zA-Z0-9/._-]+$/.test(b.src) && !b.src.includes('..'), 'Use a local image');
+      const caption = b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : '';
+      return `<figure style="margin:32px 0"><img src="${esc(b.src)}" alt="${esc(b.alt)}" loading="lazy" style="display:block;width:100%;height:auto">${caption}</figure>`;
+    }
     assert(['paragraph','heading'].includes(b.type), 'Unsupported block type');
     if (note.coverAfterOpening && index === 0) return `<p>${esc(b.text)}</p><img src="${esc(note.cover)}" alt="${esc(note.coverAlt)}" style="display:block;width:100%;height:auto">`;
     return b.type === 'heading' ? `<h2>${esc(b.text)}</h2>` : `<p>${esc(b.text)}</p>`;
