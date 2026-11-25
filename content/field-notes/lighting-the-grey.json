@@ -1,0 +1,33 @@
+{
+  "slug": "lighting-the-grey",
+  "title": "Lighting the Grey",
+  "description": "A Portland room at dusk, and what a single lamp can do as the daylight fades.",
+  "status": "published",
+  "source": "Notion: Lighting the Grey",
+  "sourceReviewed": "2026-11-25",
+  "cover": "/images/site/lighting-the-grey.webp",
+  "coverAlt": "Three sketches of a chair beside a window at dusk. As the branch outside fades, lamplight warms the wall and reflects in the glass.",
+  "coverAfterOpening": true,
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "There’s a point on a November afternoon in Portland when the kitchen window turns into a mirror. A few minutes ago you could see the wet branches outside. Now you can see the ceiling fixture, twice."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the hour I’d design a room around. Daylight has been doing a lot of quiet work. It lit the wall across from the window, caught the edge of the table, and let you see the face of whoever sat opposite you. Flip on a single overhead light and the table is bright again, but the far wall can drop out of view. The room feels smaller."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before buying a fixture, I’d move a lamp. Put one at the dark end of the room, a little way out from the wall. Turn off the overhead and sit where you usually sit. Can you read? Can you see the person across from you? Does the bulb catch your eye every time you look up? A few inches of height or a turn of the shade can settle that last question."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then try the color. A warm bulb around 2700 K is where I’d start in a living room. While there’s still some blue-grey light outdoors, look at a piece of wood near the window. One end can look honey-colored in the lamplight while the other still picks up the sky. That brief overlap is one of the pleasures of winter here."
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s also what interests me about designing a lamp. You can work out its proportions on a bench. To judge the light, you have to carry it into a room, pull up a chair, and stay until the window goes dark."
+    }
+  ]
+}
