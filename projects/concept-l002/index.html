@@ -115,7 +115,9 @@
   .fn-card:hover .fn-card-title { text-decoration: underline; }
   @media (max-width: 600px) { .gallery-grid, .fn-grid { grid-template-columns: 1fr; } nav { padding: 8px 20px; } }
 
-  </style>
+    .lamp-photo { display: block; align-self: start; cursor: zoom-in; }
+  .lamp-photo span { display: block; margin-top: 8px; font-size: 13px; text-decoration: underline; }
+</style>
   <link rel="stylesheet" href="/assets/recovery.css">
 </head>
 <body>
@@ -136,7 +138,7 @@
 </nav>
 
 <div style="max-width:1100px;padding:40px 40px 0;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
-  <div><img src="/images/site/l.002.webp" alt="Concept L.002" style="width:100%;display:block;background:#f2f2f2;"></div>
+  <div><a class="lamp-photo" href="/images/site/l.002.webp" aria-label="Enlarge lamp image"><img src="/images/site/l.002.webp" alt="Concept L.002" style="width:100%;display:block;background:#f2f2f2;"><span>Enlarge image ↗</span></a></div>
   <div>
     <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#888;margin-bottom:10px;">Objects</div>
     <h1 style="font-size:26px;font-weight:400;letter-spacing:-0.01em;margin-bottom:16px;">Concept L.002</h1>
